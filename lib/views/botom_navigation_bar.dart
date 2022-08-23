@@ -1,5 +1,4 @@
 import 'package:flutter/cupertino.dart';
-import 'package:flutter/material.dart';
 import 'package:users/widgets/icons_for_bottom_navigation_bar.dart';
 
 class BotomNavigationBar extends StatelessWidget {

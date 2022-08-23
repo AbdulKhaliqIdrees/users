@@ -1,5 +1,3 @@
-import 'dart:html';
-
 import 'package:flutter/material.dart';
 import 'package:users/views/ap_bar_for_chrome.dart';
 import 'package:users/widgets/reuse_for_chrome_body.dart';
@@ -12,12 +10,11 @@ class BodyForChrome extends StatelessWidget {
     return Column(
       children: [
         Padding(
-          padding: EdgeInsets.only(top: 50),
+          padding: EdgeInsets.only(top: 70),
           child: ApBarForChrome(),
         ),
         Container(
-          width: MediaQuery.of(context).size.width * 0.55,
-          height: MediaQuery.of(context).size.height * 0.59,
+         width: MediaQuery.of(context).size.width*0.53,
           decoration: BoxDecoration(
             color: Color(0xffFFFFFF),
             borderRadius: BorderRadius.circular(20),
