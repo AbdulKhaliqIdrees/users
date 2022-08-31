@@ -20,20 +20,22 @@ class ApBarForChrome extends StatelessWidget {
                 ),
               ),
               SizedBox(
-                width: 550,
+                width: MediaQuery.of(context).size.width * 0.40,
               ),
-              Container(
-                decoration: BoxDecoration(
-                  color: Color(0xffF8660A),
-                  borderRadius: BorderRadius.circular(12),
-                ),
-                child: Padding(
-                  padding: EdgeInsets.all(5),
-                  child: Center(
-                    child: Text(
-                      "+ Add User ",
-                      style: TextStyle(
-                        color: Color(0xffFFFFFF),
+              FittedBox(
+                child: Container(
+                  decoration: BoxDecoration(
+                    color: Color(0xffF8660A),
+                    borderRadius: BorderRadius.circular(12),
+                  ),
+                  child: Padding(
+                    padding: EdgeInsets.all(5),
+                    child: Center(
+                      child: Text(
+                        "+ Add User ",
+                        style: TextStyle(
+                          color: Color(0xffFFFFFF),
+                        ),
                       ),
                     ),
                   ),

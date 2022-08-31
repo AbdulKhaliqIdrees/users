@@ -11,22 +11,23 @@ class MyHome extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color(0xffFFF0E9),
-      body: SafeArea(
-        child: Container(
-          child: Row(
-          children: [
-            SideBar(),
-           Container(
-            constraints: BoxConstraints(
-              maxWidth: 170,
+        backgroundColor: Color(0xffFFF0E9),
+        body: SafeArea(
+          child: SingleChildScrollView(
+              child: SingleChildScrollView(
+            scrollDirection: Axis.horizontal,
+            child: Container(
+              child: Row(
+                children: [
+                  SideBar(),
+                  Container(
+                    width: MediaQuery.of(context).size.width * 0.161,
+                  ),
+                  BodyForChrome(),
+                ],
+              ),
             ),
-           ),
-            BodyForChrome(),
-          ],
-        ),
-        ),
-      ),
-    );
+          )),
+        ));
   }
 }

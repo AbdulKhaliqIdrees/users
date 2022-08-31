@@ -8,8 +8,6 @@ class BodyForMobile extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: MediaQuery.of(context).size.height * 0.66,
-      width: MediaQuery.of(context).size.width * 0.88,
       decoration: BoxDecoration(
         color: Color(0xffFFFFFF),
         borderRadius: BorderRadius.circular(18),
@@ -22,7 +20,7 @@ class BodyForMobile extends StatelessWidget {
           ReuseForMobileBody("aliahmad@gmail.com", "+923046716159"),
           ReuseForMobileBody("naeem@gmail.com", "+923094672653"),
           Padding(
-            padding: EdgeInsets.only(left: 25, top: 25),
+            padding: EdgeInsets.only(left: 25, top: 20, bottom: 30),
             child: Text(
               "Matthias Duve (MoenaUser1)",
               style: TextStyle(

@@ -10,11 +10,11 @@ class BodyForChrome extends StatelessWidget {
     return Column(
       children: [
         Padding(
-          padding: EdgeInsets.only(top: 70),
+          padding: EdgeInsets.only(top: 0),
           child: ApBarForChrome(),
         ),
         Container(
-         width: MediaQuery.of(context).size.width*0.53,
+          width: MediaQuery.of(context).size.width * 0.53,
           decoration: BoxDecoration(
             color: Color(0xffFFFFFF),
             borderRadius: BorderRadius.circular(20),
@@ -25,19 +25,47 @@ class BodyForChrome extends StatelessWidget {
                 padding: EdgeInsets.only(left: 40, top: 20),
                 child: Row(
                   children: [
-                    Text("NAME"),
-                    SizedBox(
-                      width: 90,
+                    Flexible(
+                      child: SingleChildScrollView(
+                        scrollDirection: Axis.horizontal,
+                        child: Text(
+                          "NAME",
+                          maxLines: 2,
+                        ),
+                      ),
                     ),
-                    Text("USER NAME"),
-                    SizedBox(
-                      width: 50,
+                    SizedBox(width: MediaQuery.of(context).size.width * 0.065),
+                    Flexible(
+                      child: SingleChildScrollView(
+                        scrollDirection: Axis.horizontal,
+                        child: Text(
+                          "USER NAME",
+                          maxLines: 2,
+                        ),
+                      ),
                     ),
-                    Text("EMAIL"),
-                    SizedBox(
-                      width: 180,
+                    SizedBox(width: MediaQuery.of(context).size.width * 0.038),
+                    Flexible(
+                      child: SingleChildScrollView(
+                        scrollDirection: Axis.horizontal,
+                        child: Text(
+                          "EMAIL",
+                          maxLines: 2,
+                        ),
+                      ),
                     ),
-                    Text("PHONE NUMBER"),
+                    SizedBox(
+                      width: MediaQuery.of(context).size.width * 0.13,
+                    ),
+                    Flexible(
+                      child: SingleChildScrollView(
+                        scrollDirection: Axis.horizontal,
+                        child: Text(
+                          "PHONE NUMBER",
+                          maxLines: 2,
+                        ),
+                      ),
+                    ),
                   ],
                 ),
               ),

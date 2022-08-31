@@ -5,34 +5,43 @@ class ApBarForMobile extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Row(
-      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-      children: [
-        Text(
-          "Users",
-          style: TextStyle(
-            color: Color(0xff212121),
-            fontWeight: FontWeight.bold,
-            fontSize: 18,
-          ),
-        ),
-        Container(
-          height: MediaQuery.of(context).size.height * 0.044,
-          width: MediaQuery.of(context).size.width * 0.27,
-          decoration: BoxDecoration(
-            color: Color(0xffF8660A),
-            borderRadius: BorderRadius.circular(12),
-          ),
-          child: Center(
-            child: Text(
-              "+ Add User ",
+    return Expanded(
+      child: Container(
+        child: Row(
+          children: [
+            Text(
+              "Users",
               style: TextStyle(
-                color: Color(0xffFFFFFF),
+                color: Color(0xff212121),
+                fontWeight: FontWeight.bold,
+                fontSize: 18,
               ),
             ),
-          ),
+            SizedBox(
+              width: MediaQuery.of(context).size.width * 0.50,
+            ),
+            FittedBox(
+              child: Container(
+                decoration: BoxDecoration(
+                  color: Color(0xffF8660A),
+                  borderRadius: BorderRadius.circular(12),
+                ),
+                child: Padding(
+                  padding: EdgeInsets.all(5),
+                  child: Center(
+                    child: Text(
+                      "+ Add User ",
+                      style: TextStyle(
+                        color: Color(0xffFFFFFF),
+                      ),
+                    ),
+                  ),
+                ),
+              ),
+            ),
+          ],
         ),
-      ],
+      ),
     );
   }
 }
