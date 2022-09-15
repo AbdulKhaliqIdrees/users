@@ -1,6 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:users/widgets/reuse_for_mobile_body.dart';
+import 'package:users/widgets/mobile_body_item.dart';
 
 class BodyForMobile extends StatelessWidget {
   const BodyForMobile({Key? key}) : super(key: key);
@@ -15,10 +15,10 @@ class BodyForMobile extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          ReuseForMobileBody("abdulkhaliq@gmail.com", "+923024358402"),
-          ReuseForMobileBody("ali@gmail.com", "+923024092642"),
-          ReuseForMobileBody("aliahmad@gmail.com", "+923046716159"),
-          ReuseForMobileBody("naeem@gmail.com", "+923094672653"),
+          // MobileBodyItem("abdulkhaliq@gmail.com", "+923024358402"),
+          // MobileBodyItem("ali@gmail.com", "+923024092642"),
+          // MobileBodyItem("aliahmad@gmail.com", "+923046716159"),
+          // MobileBodyItem("naeem@gmail.com", "+923094672653"),
           Padding(
             padding: EdgeInsets.only(left: 25, top: 20, bottom: 30),
             child: Text(
