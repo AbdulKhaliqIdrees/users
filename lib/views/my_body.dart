@@ -57,7 +57,7 @@ class MyBody extends StatelessWidget {
                           separatorBuilder: (_, __) {
                             return const Divider();
                           },
-                          itemCount: 8,
+                          itemCount: 7,
                         ),
                       ],
                     ),

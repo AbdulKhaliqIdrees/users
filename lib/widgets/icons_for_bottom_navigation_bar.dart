@@ -14,6 +14,9 @@ class IconsForBottomNavigationBar extends StatelessWidget {
           icon,
           color: Colors.black,
         ),
+        SizedBox(
+          height: 15,
+        ),
         Text(
           iconname,
           style: TextStyle(

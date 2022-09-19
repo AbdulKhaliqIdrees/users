@@ -1,5 +1,4 @@
 import 'package:flutter/cupertino.dart';
-import 'package:flutter/material.dart';
 
 class MobileBodyItem extends StatelessWidget {
   const MobileBodyItem({Key? key}) : super(key: key);
@@ -10,7 +9,7 @@ class MobileBodyItem extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         const Text(
-          "Mubeen",
+          "Mubeen Naeem",
           style: TextStyle(
             fontWeight: FontWeight.bold,
             fontSize: 15,
@@ -22,7 +21,7 @@ class MobileBodyItem extends StatelessWidget {
               CupertinoIcons.mail,
               color: Color(0xffF8660A),
             ),
-            Text('mubeen@mail.com'),
+            Text('mubeen@gmail.com'),
           ],
         ),
         Row(
@@ -31,7 +30,7 @@ class MobileBodyItem extends StatelessWidget {
               CupertinoIcons.phone,
               color: Color(0xffF8660A),
             ),
-            Text('123 456 789'),
+            Text('+923024358402'),
           ],
         ),
       ],
